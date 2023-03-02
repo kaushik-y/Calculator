@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">   
+    
+</head>
+<body>
+    <div class="Heading">
+        calculator
+    </div>  
+    <div class="container">
+    <table class="calculator">
+      <form action="" name="clc">
+      
+      <tr>
+          <td colspan="4" class="result"> <input type="text" name="display" placeholder="00"> </td>
+      </tr>
+      
+      <tr>
+        <td><input class="btn" type="button" value="1"onclick="clc.display.value+= '1'">
+          <td><input class="btn" type="button" value="2"onclick="clc.display.value+= '2'"></td>
+          <td><input class="btn" type="button" value="3"onclick="clc.display.value+= '3'"></td>
+          <td><input class="btn" type="button" value="+"onclick="clc.display.value+= '+'"></td>
+      </tr>
+      
+      <tr>
+        <td><input class="btn" type="button" value="4"onclick="clc.display.value+= '4'"> </td>
+        <td><input class="btn" type="button" value="5"onclick="clc.display.value+= '5'"> </td>
+        <td><input class="btn" type="button" value="6"onclick="clc.display.value+= '6'"> </td>
+        <td><input class="btn" type="button" value="-"onclick="clc.display.value+= '-'"></td> 
+        
+      </tr>
+      <tr>
+        <td><input class="btn" type="button" value="7"onclick="clc.display.value+= '7'"> </td>
+        <td> <input class="btn" type="button" value="8"onclick="clc.display.value+= '8'"></td>     
+        <td> <input class="btn" type="button" value="9"onclick="clc.display.value+= '9'"> </td>
+        <td><input class="btn" type="button" value="*"onclick="clc.display.value+= '*'"></td>
+        
+      </tr>
+      <tr>
+      <td><input class="btn" type="button" value="C"onclick="clc.display.value= ''"></td>
+      <td><input class="btn" type="button" value="0"onclick="clc.display.value+= '0'"></td>
+      <td><input class="btn" type="button" value="="onclick="clc.display.value= eval(clc.display.value)"></td>
+      <td><input class="btn" type="button" value="&#247;"onclick="clc.display.value+= '/'"></td>
+       
+       </tr>
+    
+  </form>
+</table>
+</div>
+</body>
+</html>
